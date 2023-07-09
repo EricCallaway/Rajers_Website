@@ -1,0 +1,94 @@
+/* * {
+    font-family: 'Open Sans', sans-serif;
+} */
+
+* {
+    font-family: cursive;
+}
+
+body {
+    background-color: peachpuff;
+    margin-top: 80px;
+}
+
+main {
+    margin:20px;
+    padding: 20px;
+    color: white;
+    
+}
+
+li {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-rigth: 40px;
+    padding: 20px;
+
+}
+
+header {
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding-left: 190px;
+    padding-right: 190px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header * {
+    display: inline;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: sienna;
+}
+
+#hero-header-top {
+    display: inline-flex;
+}
+
+
+#top-left {
+    /* background-color: blueviolet; */
+    margin-top: 40px;
+    padding-right: 20px;
+
+}
+
+#top-right {
+    /* background-color: aqua; */
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 180px;
+}
+
+#top-center {
+    display: flex;
+    /* background-color: black; */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#book-me {
+    background-color: peachpuff;
+    color: sienna;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
