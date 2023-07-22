@@ -3,12 +3,13 @@
 } */
 
 * {
-    font-family: cursive;
+    font-family: 'Italiana' ;font-size: 22px;
 }
 
 body {
     /* background-color: peachpuff; */
     margin-top: 80px;
+    background-color: whitesmoke;
 }
 
 main {
@@ -61,7 +62,7 @@ a:hover {
 
 #top-left {
     /* background-color: blueviolet; */
-    margin-top: 20px;
+    margin-top: 40px;
     margin-righ: 20px;
     padding-right: 10px;
     
@@ -85,7 +86,7 @@ a:hover {
 
 #book-me {
     background-color: peachpuff;
-    color: sienna;
+    color: #632C1A;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -100,20 +101,26 @@ a:hover {
     /* padding: 20px; */
 }
 
-.main-page-row {
+/* .main-page-row {
     padding: 80px;
-}
+} */
 
 #hero-section {
-    background-color: blanchedalmond;
+    
+    background-color: whitesmoke;
+    margin-top: 200px;
+    margin-bottom: 240px;
+    padding-top: 100px;
+    padding-bottom: 280px;
+    display: inline-block;
 }
 
 #products-services-section {
-    background-color: aquamarine;
+    background-color: #E7CDCD;
 }
 
 #reviews-section {
-    background-color: beige;
+    background-color: #632C1A;
 }
 
 #call-to-action-section {
@@ -123,3 +130,77 @@ a:hover {
 #booking-form-footer {
     background-color: blueviolet;
 }
+
+#hero-header-1{
+    /* border: 5px solid darkblue; */
+    max-width: 100%;
+    margin-top: 0%;
+}
+
+#hero-header-2{
+    /* border: 5px solid darkblue; */
+    max-width: 100%;
+    float: left;
+}
+
+/* #hero-section-left {
+    flex: 1;
+    padding: 0 auto;
+    margin-left: 0 auto;
+} */
+
+/* #hero-section-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+} */
+
+.hero-content {
+    max-width: 2400px;
+    margin: 0 auto;
+    display: inline-block;
+    flex-direction: row;
+}
+
+/* #hero-section-right img {
+    width: 30%;
+    max-height: 300px;
+} */
+
+.main-page-row {
+    /* border: 1px solid black; */
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.hero-section {
+    /* border: 1px solid black; */
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: left;
+    max-width: 100%;
+}
+
+.hero-section-child {
+    display: inline-block;
+    /* border: 1px solid red; */
+    padding: 1rem 1rem;
+    vertical-align: top;
+    max-width: 70%;
+}
+
+#hero-section-right {
+    width: 23%;
+    height: 23.85rem;
+}
+
