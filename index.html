@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="mobile_styles.css" />
+    <link rel="stylesheet" type="text/css" href="desktop_styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+
     <title>Rajer's Website</title>
 </head>
-<body id="Hero Body">
+<body class="body" id="Hero Body">
     <header class="Hero Header">
         <div class="Hero-Header-Top" id="hero-header-top">
             <div class="nav-bar" id="top-left">
                 <h1>Royale Artisian Glam & Coture</h1>
             </div>
             <div class="nav-bar" id="top-center">
-                <nav class="Header-nav-Header-nav--primary">
-                    <ul>
-                        <li id="services"><a href="#services">Services</a></li>
-                        <li id="shop"><a href="#shop">Shop</a></li>
-                        <li id="after-care"><a href="#after-care">AfterCare</a></li>
-                        <li id="about-me"><a href="#about-me">About Me</a></li>
-                        <li id="contact"><a href="#contact">Contact</a></li>
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item" id="services"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item" id="shop"><a href="#shop" class="nav-link">Shop</a></li>
+                        <li class="nav-item" id="after-care"><a href="#after-care" class="nav-link">AfterCare</a></li>
+                        <li class="nav-item" id="about-me"><a href="#about-me" class="nav-link">About Me</a></li>
+                        <li class="nav-item" id="contact"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
             </div>
-            <div class="nav-bar" id="top-right">
-                <ul>
+
+            <!-- <div class="nav-bar-right" id="top-right">
+                <ul class="book-me">
                     <li id="book-me"><a href="#book-me">Book Appointment</a></li>
                 </ul>
-            </div>
+            </div> -->
+            
         </div>
     </header>
+
+    <script src="script.js"></script>
+
     <main id="home-page-main">
         <div class="hero-section" id="hero-section-left">
             <div class="hero-section-child" id="hero-section-left">
@@ -43,6 +55,12 @@
             <div class="hero-section-child" id="hero-section-right">
                 <img src="imgs/rajer_pic.jpg" alt="Your image Alt Text" width="100%" height="100%">
             </div>
+        </div>
+
+        <div class="call-to-action" id="book-me-section">
+            <ul class="book-me">
+                <li id="book-me"><a href="#book-me">Book Appointment</a></li>
+            </ul>
         </div>
 
         <section class="main-page-row" id="products-services-section">
