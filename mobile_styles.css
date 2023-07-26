@@ -17,30 +17,25 @@
     body {
         background-color: #F7BCAC;
         color: whitesmoke;
-        grid-template-rows: auto auto 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+
+    header {
+        background-color: palevioletred;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
     }
 
-    li {
-        list-style: none;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .call-to-action {
-        display: block;
+    /* H1 tags */
+    #logo-text {
         text-align: center;
-        background-color: peachpuff;
-        padding: 10px;
+        font-size: 7vw;
     }
 
-    .navbar {
-        min-height: 70px;
-        /* display: flex; */
-        justify-content: space-between;
-        align-items: center;
+    /* Button Tag */
+    #menu-btn {
+        text-align: center;
     }
 
     .nav-menu {
@@ -56,102 +51,30 @@
         width: 100%;
         text-align: center;
         transition: 0.3s;
-
     }
 
-    .nav-item {
-        margin: 16px 0;
-    }
+    /* li {
+        list-style: none;
+    } */
 
-    .nav-menu.active {
-        left: 0;
-    }
+    /* a {
+        color: white;
+        text-decoration: none;
+    } */
 
-    .nav-bar {
-        font-size: 2rem;
-    }
-
-    .nav-link {
-        transition: 0.7s ease;
-    }
-
-    .nav-link:hover {
-        color: dodgerblue;
-    }
     
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        background-color: black;
-        border-radius: 0%;
-    }
-    
-    #menu-btn {
-        width: 22.1vw;
-        height: 5vh;
-        padding-left: 5%;
-    }
-
-
-    #menu {
-        font-size: 6vw;
-    }
-
-
-
-    .hamburger.hamburger.active.bar:nth-child(1){
-        transform: translateX(8px) rotate(45deg);
-    }
-
-    .hamburger.hamburger.active.bar:nth-child(2){
-        transform: translateX(-8px) rotate(-45deg);
-    }
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: white;
-    }
-
-    .nav-bar-right {
-        justify-content: center;
-        position: static;
-        bottom: 75%;
-        left: 0;
-        right: 0;
-        background-color: peachpuff;
-        z-index: 400;
-    }
-
-    .hero-section {
-        display: block;
-        padding: 5%
-    }
 
     #logo {
         width: 15vw;
         height: 5vh;
     }
 
-    #hero-header-top {
-        /* display: flex; */
-        /* justify-content: space-between; */
-        align-items: center;
-    }
+    #hero-header {
+        display: grid;
+        gap: 1rem;
 
-    #top-center {
-        padding-right: 7.5%;
-        padding-top: 9%;
-        text-align: center;
-        width: 100vw;
-        flex: 0.25;
-        /* float: right; */
-        margin-left: 35%;
-        align-items: center;
+        /* One column for the mobile app */
+        grid-template-columns: auto-fill, minmax(240px, 1fr);
     }
 
     #top-left {
@@ -166,10 +89,7 @@
         align-items: center;
     }
 
-    #logo-text {
-        text-align: center;
-        font-size: 7vw;
-    }
+    
 
     #hero-section-child-1 {
         height: 30vh;
