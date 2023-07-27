@@ -10,7 +10,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
         
     }
 
@@ -25,17 +25,32 @@
         background-color: palevioletred;
         display: grid;
         grid-template-columns: repeat(2, minmax(160px, 1fr));
+        margin-top: 10%;
+        margin-left: 2.5%;
+    }
+
+    main {
+        margin-left: 0;
     }
 
     /* H1 tags */
     #logo-text {
         text-align: center;
-        font-size: 7vw;
+        font-size: 6.5vw;
+    }
+
+    #div-menu-btn {
+        display: grid;
     }
 
     /* Button Tag */
     #menu-btn {
+        width: 70%;
+        height: 60%;
         text-align: center;
+        align-content: center;
+        margin: auto;
+        border-radius: 25px;
     }
 
     .nav-menu {
@@ -115,7 +130,7 @@
         margin: 10% 0 0% 0;
         width: 100vw;
         height: 100vh;
-    }
+    } 
 
     #hero-header-1 {
         text-align: center;
@@ -138,6 +153,10 @@
         text-align: center;
         font-size: 6vw;
         font-style: italic;
+    }
+
+    #hero-header-3 {
+        text-align: center;
     }
 
     #logo-img {
