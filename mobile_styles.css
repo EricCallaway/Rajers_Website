@@ -22,7 +22,6 @@
     }   
 
     header {
-        background-color: palevioletred;
         display: grid;
         grid-template-columns: repeat(2, minmax(160px, 1fr));
         margin-top: 10%;
@@ -113,23 +112,19 @@
     }
 
     #hero-section-child-2 {
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        top: 0;
-        right: 10;
-        margin: 10%;
-        margin-right: 2%;
-        margin-top: 2%;
-        height: 55vh;
-        padding-left: 2%;
-        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
     }
 
     #hero-section-left {
-        margin: 10% 0 0% 0;
+        display: grid;
+
+
+        /* margin: 10% 0 0% 0;
         width: 100vw;
-        height: 100vh;
+        height: 100vh; */
     } 
 
     #hero-header-1 {
