@@ -1,19 +1,39 @@
 @media (max-width: 600px){
     * {
+        margin: 0;
+        padding: 0;
         font-family: 'Italiana';
         font-size: 16px;
         box-sizing: border-box;
         outline: 1px solid red;
     }
 
-    .container {
+    .grid-container {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+        /* grid-template-rows: auto;  */
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #body{
+        display: grid;
     }
 
     #header{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
     }
+
+    #menu-btn{
+        border-radius: 25px;
+        width: 100%;
+        float: left;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    /* This will be for when the phone is in landscape mode */
 }

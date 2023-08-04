@@ -12,7 +12,7 @@
     <title>Rajer's Website</title>
 </head>
 
-<body class="container" id="body">
+<body class="grid-container" id="body">
 
     <header class="container" id="header">
         <h1 id="logo-text">Royale Artisian Glam & Coture</h1>
@@ -61,5 +61,16 @@
     <footer class="container">
         <h1>Booking</h1>
     </footer>
+
+    <script>
+        function mobileMenu(){
+            if (document.getElementById('navbar').style.display == 'block'){
+                document.getElementById('navbar').style.display = 'none';
+            } else {
+                document.getElementById('navbar').style.display = 'block';
+            }
+        }
+        document.getElementById('menu-btn').addEventListener('click', mobileMenu);
+    </script>
 
 </body>
