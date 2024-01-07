@@ -64,7 +64,33 @@ body {
 
 .product {
     flex-grow: 1;
+    flex-direction: column;
 }
+
+#product_1, #product_2, #product_3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+#starter_set_img {
+    border-radius: 20%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#refills_img {
+    border-radius: 20%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#full_set_img {
+    border-radius: 20%;
+    height: 400px;
+    object-fit: cover;
+}
+
 
 #about-me {
     height: 90vh;
