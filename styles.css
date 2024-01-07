@@ -48,10 +48,16 @@ body {
 #placeholder {
     height: 90vh;
     width: 35%;
-    background-color: black;
     margin: 0;
     width:  47.5%;
 }
+
+#rajer_glamour_img {
+height: 900px;
+object-fit: cover;
+}
+
+
 
 #hero-section > ul {
     margin-top: auto;
