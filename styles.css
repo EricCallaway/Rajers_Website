@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Nav Bar*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar {
+    display: flex;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 2em;
+}
+
+/* Hero Section */
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+
+#hero-section h1 {
+    margin-top:15%;
+    height: 30vh;
+    font-size: 5rem;
+}
+
+#hero-section h2 span {
+    font-style: italic;
+}
+
+#placeholder {
+    height: 90vh;
+    width: 35%;
+    background-color: black;
+    margin: 0;
+    width:  47.5%;
+}
+
+#hero-section > ul {
+    margin-top: auto;
+}
+
+#products-services {
+    height: 90vh;
+    display: flex;
+}
+
+.product {
+    flex-grow: 1;
+}
+
+#about-me {
+    height: 90vh;
+}
+

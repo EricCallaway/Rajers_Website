@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="mobile_styles.css" /> 
-    <!-- <link rel="stylesheet" type="text/css" href="desktop_styles.css" />  -->
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
     <link rel="icon" href="/Users/ericcallaway/Computer Science/Rajer's Website/imgs/rajer_logo.png" type="image/icon type"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
@@ -15,62 +15,47 @@
 <body class="grid-container" id="body">
 
     <header class="container" id="header">
-        <div class="container" id="menu-btn">
-            <button class="btn" id="menu-btn" type="button">Menu</button>
-        </div>
         <h1 id="logo-text">Royale Artisian Glam & Coture</h1>
         <nav class="container" id="navbar">
             <ul class="nav-menu">
-                <li class="nav-item" id="services"><a href="#services" class="nav-link">Services</a></li>
-                <li class="nav-item" id="shop"><a href="#shop" class="nav-link">Shop</a></li>
-                <li class="nav-item" id="after-care"><a href="#after-care" class="nav-link">AfterCare</a></li>
-                <li class="nav-item" id="about-me"><a href="#about-me" class="nav-link">About Me</a></li>
-                <li class="nav-item" id="contact"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item" id="nav-services"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item" id="nav-shop"><a href="#shop" class="nav-link">Shop</a></li>
+                <li class="nav-item" id="nav-after-care"><a href="#after-care" class="nav-link">AfterCare</a></li>
+                <li class="nav-item" id="nav-about-me"><a href="#about-me" class="nav-link">About Me</a></li>
+                <li class="nav-item" id="nav-contact"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container" id="home-main">
         <div class="container" id="hero-section">
-            <h1 class="header" id="hero-header-1">Where <span id="glam">Glamour</span> Meets <span id="perfect">Perfection</span></h1>
-            <h2 class="header" id="hero-header-2">Elegance, Sophistication, and Style</h2>
-            <h2 class="header" id="hero-header-3">Is our standard at Royale Artisian Glam & Coture</h2>
-            <img src="imgs/rajer_pic.jpg" alt="Your image Alt Text" width="100%" height="100%" id="hero-image">
+            <h1>Where Glamour <br>Meets Perfection</h1>
+            <h2>
+                <span>"Elegance, Sophistication, and Style"</span>
+                <br>
+                Is our standard here at Royale Artesian Glam & Coture
+            </h2>
             <ul>
                 <li class="call-to-action" id="book-me"><a href="#book-me">Book Appointment</a></li>
             </ul>
+            <div id="placeholder"></div>
         </div>
 
+        <!-- Products and Services-->
+        <h1>Products and Serivices</h1>
         <div class="container" id="products-services">
-            <h1>Products and Serivices</h1>
+            <div class="product" id="product_1">Product #1</div>
+            <div class="product" id="product_2">Product #2</div>
+            <div class="product" id="product_3">Product #3</div>
         </div>
 
         <div class="container" id="about-me">
             <h1>About Me</h1>
         </div>
-
-        <div class="container" id="reviews">
-            <h1>Reviews</h1>
-        </div>
-
-        <div class="container" id="call-to-action">
-            <h1>Call to Action</h1>
-        </div>
     </main>
 
     <footer class="container">
         <h1>Booking</h1>
+        <button>Booking</button>
     </footer>
-
-    <script>
-        function mobileMenu(){
-            if (document.getElementById('navbar').style.display == 'block'){
-                document.getElementById('navbar').style.display = 'none';
-            } else {
-                document.getElementById('navbar').style.display = 'block';
-            }
-        }
-        document.getElementById('menu-btn').addEventListener('click', mobileMenu);
-    </script>
-
 </body>
